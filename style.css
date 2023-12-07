@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Ephesis&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Smooch+Sans:wght@100;200;500&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(181, 179, 179);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 350px;
+    gap: 10px;
+    grid-template-areas: 
+    "div1 div1 div2 div5"
+    "div3 div4 div4 div5";
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+/* carte daniel */
+#contenudaniel{
+    background-color: blueviolet;
+    background-image: url(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 500px 20px;
+    padding: 25px;
+    border-radius: 15px;
+    color: aliceblue;
+    position: relative;
+    gap: 10px;
+    width: 700px;
+    box-shadow: 0 20px 10px rgb(87, 54, 87);
+}
+
+.cartedaniel {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.cartedaniel .photosvg{
+    width: 120px;
+    position: absolute;
+    right: 80px;
+    top: 0px;
+}
+
+#profil{
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-bottom: 15px;
+    font-size: 25px;
+
+}
+
+/* carte jonathen */
+
+.contenujonathan{
+    background-color:hsl(224, 30%, 27%);
+    padding: 30px;
+    border-radius: 15px;
+    color: aliceblue;
+    width: 350px;
+    gap: 10px;
+    box-shadow: 0 20px 10px #261e41;
+}
+
+.cartejonathan{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+/* carte jeanette */
+
+.contenujeanette{
+    background-color: rgb(247, 248, 250);
+    padding: 30px;
+    color: rgb(11, 20, 28);
+    border-radius: 15px;
+    width: 350px;
+    height: 300px;
+    gap: 20px;
+    box-shadow: 0 20px 10px rgb(101, 99, 101);
+}
+
+.cartejeanette{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+/* carte patrick */
+
+.contenupatrik{
+    background-color: rgb(50, 39, 69);
+    padding: 30px 40px;
+    border-radius: 15px;
+    color: aliceblue;
+    width: 700px;
+    gap: 10px;
+    box-shadow: 0 20px 10px rgb(60, 55, 71);
+}
+
+.cartepatrik{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+/* carte kira */
+
+.contenukira{
+    background-color: rgb(250, 249, 252);
+    padding: 40px 30px;
+    border-radius: 15px;
+    color: rgb(50, 64, 75);
+    width: 300px;
+    height: 630px;
+    gap: 10px;
+    box-shadow: 0 20px 10px rgb(92, 91, 92);
+}
+
+.cartekira{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+.contenudaniel {
+    grid-area: div1;
+}
+
+.contenujonathan{
+    grid-area: div2;
+}
+
+.contenujeanette{
+    grid-area: div3;
+}
+
+.contenupatrik{
+    grid-area: div4;
+}
+
+.contenukira{
+    grid-area: div5;
+}
+
+
